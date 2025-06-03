@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Mazzio Acessórios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Imagens/icon.png">
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="Imagens/logo.png" width="120px" height="80px"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1>Brilho que Conquista</h1>
+            <p>Joias exclusivas para momentos especiais</p>
+            <a href="#produtos" class="btn">Descubra Nossa Coleção</a>
+        </div>
+    </header>
+
+    <!-- Seção de Categorias -->
+    <section class="categorias" id="produtos">
+        <div class="container">
+            <h2>Nossas Categorias</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="Imagens/aneis.jpg" alt="Anéis">
+                    <h3>Anéis</h3>
+                    <a href="aneis.html" class="btn-small">Ver Coleção</a>
+                </div>
+                <div class="category-card">
+                    <img src="Imagens/berloc.jpg" alt="Berloc">
+                    <h3>Berloc</h3>
+                    <a href="berloc.html" class="btn-small">Ver Coleção</a>
+                </div>
+                <div class="category-card">
+                    <img src="Imagens/brincos.jpg" alt="Brincos">
+                    <h3>Brincos</h3>
+                    <a href="brincos.html" class="btn-small">Ver Coleção</a>
+                </div>
+                <div class="category-card">
+                    <img src="Imagens/colares.jpg" alt="Colares">
+                    <h3>Colares</h3>
+                    <a href="colares.html" class="btn-small">Ver Coleção</a>
+                </div>
+                <div class="category-card">
+                    <img src="Imagens/pulseiras.jpg" alt="Pulseiras">
+                    <h3>Pulseiras</h3>
+                    <a href="pulseiras.html" class="btn-small">Ver Coleção</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Seção Sobre Nós -->
+     <section class="sobre" id="sobre">
+        <div class="container">
+            <div class="sobre-content">
+                <div class="sobre-text">
+                    <h2>Sobre a Mazzio Acessórios</h2>
+                    <p>Texto sobre nós aqui</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mazzio Acessórios</h3>
+                    <p>Elegância em cada detalhe desde 2025.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href ="#home">Home</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="contato-info" id="contato">
+                    <h3>Entre em Contato</h3>
+                    <p>Entre em contato conosco por Whatsapp</p>
+                    <p id="textoParaCopiar"><i class="fas fa-phone" onclick="copiarTexto()"></i> (17) 1234-5678</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/mazzio.acessorios?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mazzio Acessórios.</p>
+                <div class="pagamentos">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mensagem animada -->
+    <div id="mensagemCopiado">Texto copiado com sucesso!</div>
+
+    <script>
+        function copiarTexto() {
+      var texto = document.getElementById("textoParaCopiar").innerText;
+
+      var tempInput = document.createElement("textarea");
+      tempInput.value = texto;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
+
+      // Exibir a mensagem animada
+      const msg = document.getElementById("mensagemCopiado");
+      msg.classList.add("ativo");
+
+      // Esconder depois de 2,5 segundos
+      setTimeout(() => {
+        msg.classList.remove("ativo");
+      }, 2500);
+    }
+    </script>
+</body>
+</html>
