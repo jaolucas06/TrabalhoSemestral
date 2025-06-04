@@ -122,26 +122,6 @@
     <!-- Mensagem animada -->
     <div id="mensagemCopiado">Texto copiado com sucesso!</div>
 
-    <script>
-        function copiarTexto() {
-      var texto = document.getElementById("textoParaCopiar").innerText;
-
-      var tempInput = document.createElement("textarea");
-      tempInput.value = texto;
-      document.body.appendChild(tempInput);
-      tempInput.select();
-      document.execCommand("copy");
-      document.body.removeChild(tempInput);
-
-      // Exibir a mensagem animada
-      const msg = document.getElementById("mensagemCopiado");
-      msg.classList.add("ativo");
-
-      // Esconder depois de 2,5 segundos
-      setTimeout(() => {
-        msg.classList.remove("ativo");
-      }, 2500);
-    }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
