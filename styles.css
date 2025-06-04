@@ -122,6 +122,57 @@ a {
     margin-left: auto;
 }
 
+/* Estilos gerais para a logo */
+.logo img {
+    height: 80px; /* altura desejada para desktop */
+    width: auto; /* mantém a proporção */
+    object-fit: contain;
+}
+
+/* Ajustes para tablets */
+@media (max-width: 992px) {
+    .logo img {
+        height: 70px; /* reduz um pouco para tablets */
+    }
+}
+
+/* Ajustes para mobile */
+@media (max-width: 768px) {
+    .navbar .container {
+        padding: 10px 15px; /* dá mais espaço ao redor da logo */
+    }
+    
+    .logo img {
+        height: 60px; /* tamanho menor para mobile */
+    }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 576px) {
+    .logo img {
+        height: 50px; /* tamanho ainda menor se necessário */
+    }
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box; /* importante para cálculos de largura */
+}
+
+@media (max-width: 768px) {
+    .navbar .container {
+        padding: 25px 35px;
+    }
+    
+    .hamburger {
+        margin-left: auto; /* empurra o ícone para a direita */
+        padding-left: 30px; /* dá espaço entre a logo e o ícone */
+    }
+}
+
 /* Hero Section Centralizada */
 .hero {
     height: 100vh;
