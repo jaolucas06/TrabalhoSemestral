@@ -38,29 +38,24 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 // Animação ao rolar a página
 const animateOnScroll = () => {
     const elements = document.querySelectorAll('.category-card, .produto-card, .depoimento-card');
-    
+
     elements.forEach(element => {
         const elementPosition = element.getBoundingClientRect().top;
         const screenPosition = window.innerHeight / 1.3;
-        
+
         if (elementPosition < screenPosition) {
-            element.style.opacity = '1';
-            element.style.transform = 'translateY(0)';
+            element.classList.add('fade-in'); // Apenas adiciona a classe
         }
     });
 };
 
-// Definir opacidade inicial para os elementos
+// Animações da pagina
 window.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.category-card, .produto-card, .depoimento-card').forEach(element => {
-        element.style.opacity = '0';
-        element.style.transform = 'translateY(20px)';
-        element.style.transition = 'all 0.5s ease';
+        element.classList.add('fade-init');
     });
-    
-    // Disparar animação uma vez no carregamento
+
     setTimeout(animateOnScroll, 500);
 });
 
-// Adicionar evento de scroll para animação
 window.addEventListener('scroll', animateOnScroll);
