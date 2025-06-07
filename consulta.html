@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Produtos | Mazzio Acessórios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Imagens/icon.png">
+    <style src="style.css"></style>
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo"><img src="Imagens/logo.png" width="120px" height="80px"></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="consulta-container">
+        <h1>Consulta de Produtos</h1>
+        <p>Área restrita ao dono - Acesso apenas com senha</p>
+        
+        <div class="login-section">
+            <h2>Login</h2>
+            <div>
+                <input type="password" id="password-input" placeholder="Digite a senha de acesso">
+                <button id="login-button">Acessar</button>
+            </div>
+            <p class="error-message" id="login-error">Senha incorreta. Tente novamente.</p>
+        </div>
+        
+        <div class="search-section">
+            <h2>Consultar Produto</h2>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Digite o código do produto (ex: A1, Be3, C5)">
+                <button id="search-button"><i class="fas fa-search"></i> Buscar</button>
+            </div>
+            <p class="error-message" id="search-error">Produto não encontrado. Verifique o código e tente novamente.</p>
+        </div>
+        
+        <div class="product-display" id="product-result">
+            <h2>Produto Encontrado</h2>
+            <img id="product-image" src="" alt="Imagem do Produto">
+            <div class="product-code" id="product-code"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

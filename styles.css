@@ -561,3 +561,97 @@ body{
 .category-card-p h5 {
     color: var(--dark-color);
 }
+
+ /* Estilos específicos para a página de consulta */
+        .consulta-container {
+            max-width: 800px;
+            margin: 200px auto 50px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .login-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-radius: 8px;
+        }
+        
+        .search-section {
+            display: none;
+        }
+        
+        .product-display {
+            text-align: center;
+            margin-top: 30px;
+            display: none;
+        }
+        
+        .product-display img {
+            max-width: 100%;
+            max-height: 400px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .product-code {
+            font-size: 1.5rem;
+            margin-top: 15px;
+            color: #935ccb;
+            font-weight: bold;
+        }
+        
+        #search-input {
+            padding: 12px 15px;
+            width: 70%;
+            border: 1px solid #ddd;
+            border-radius: 4px 0 0 4px;
+            font-size: 16px;
+        }
+        
+        #search-button {
+            padding: 12px 20px;
+            background-color: #935ccb;
+            color: white;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        #search-button:hover {
+            background-color: #7e4db3;
+        }
+        
+        .error-message {
+            color: #e74c3c;
+            margin-top: 10px;
+            display: none;
+        }
+        
+        #password-input {
+            padding: 12px 15px;
+            width: 70%;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        
+        #login-button {
+            padding: 12px 20px;
+            background-color: #935ccb;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        #login-button:hover {
+            background-color: #7e4db3;
+        }
