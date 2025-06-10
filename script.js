@@ -116,7 +116,7 @@ window.addEventListener('scroll', () => {
             // Pulseiras
             'P1': 'Imagens/pulseira1.jpg',
             'P2': 'Imagens/pulseira2.jpg',
-            'P3': 'Imagens/pulseira3.jpg',
+            'P3': 'Imagens/pulseira3.jpg',  
             'P4': 'Imagens/pulseira4.jpg',
             'P5': 'Imagens/pulseira5.jpg',
             'P6': 'Imagens/pulseira6.jpg',
