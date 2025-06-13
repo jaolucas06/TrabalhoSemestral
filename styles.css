@@ -176,7 +176,7 @@ a {
 /* Hero Section Centralizada */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('...');
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('Imagens/template.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
